@@ -1,4 +1,5 @@
-#include<stdio.h>
+
+  #include<stdio.h>
 #include<string.h>
 struct report
 {
@@ -82,5 +83,25 @@ int main(){
             }
         }    
     }while(n==1);
+    printf("showing all report cards:\n");
+    for(int i=0;i<10;i++){
+        printf("Roll number: %d\tName:%s\tmaths: %.2f\tphysics: %.2f\tchemistry: %.2f\tbiology: %.2f\tgeology: %.2f\thistory: %.2f\ttotal: %.2f\tgrade: %s\n",r[i].roll,r[i].name,r[i].maths,r[i].physics,r[i].chemistry,r[i].biology,r[i].geology,r[i].history,r[i].total,r[i].grade);
+    }
+    printf("\n");
+     printf("entering the students whow got complete s grade:\n");
+    for(int i=0;i<10;i++){
+        if(strcmp(r[i].grade,"S")==0){
+            printf("Roll number: %d\tName:%s\tmaths: %.2f\tphysics: %.2f\tchemistry: %.2f\tbiology: %.2f\tgeology: %.2f\thistory: %.2f\ttotal: %.2f\tgrade: %s\n",r[i].roll,r[i].name,r[i].maths,r[i].physics,r[i].chemistry,r[i].biology,r[i].geology,r[i].history,r[i].total,r[i].grade);
+        }
+    }
+     printf("\n");
+     printf("entering the students whow got complete F grade:\n");
+    for(int i=0;i<10;i++){
+        if(strcmp(r[i].grade,"F")==0){
+            printf("Roll number: %d\tName:%s\tmaths: %.2f\tphysics: %.2f\tchemistry: %.2f\tbiology: %.2f\tgeology: %.2f\thistory: %.2f\ttotal: %.2f\tgrade: %s\n",r[i].roll,r[i].name,r[i].maths,r[i].physics,r[i].chemistry,r[i].biology,r[i].geology,r[i].history,r[i].total,r[i].grade);
+        }
+    }
+    return 0;
+    
 
 }
